@@ -1,0 +1,9 @@
+name: 'meu_projeto_dbt'
+version: '1.0'
+profile: 'landing_zone'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
