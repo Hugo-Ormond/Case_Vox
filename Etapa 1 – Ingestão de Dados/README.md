@@ -53,7 +53,7 @@ Optei por essa estratégia por ser simples, eficaz e compatível com a estrutura
 
 Busquei automatizar esse processo via Apache Airflow. No entanto, devido a limitações computacionais locais (uso de CPU excessivo ao subir o ambiente via Docker), não foi possível manter o Airflow em funcionamento estável na máquina.
 
-Apesar disso, desenvolvemos um código funcional simulado da DAG, salvo como `dagairflow.py`, que:
+Apesar disso, desenvolvi um código funcional simulado da DAG, salvo como `dagairflow.py`, que:
 
 - Conecta-se ao banco PostgreSQL via `PostgresHook`
 - Executa as funções `capture_customer_changes` e `capture_rental_changes`
