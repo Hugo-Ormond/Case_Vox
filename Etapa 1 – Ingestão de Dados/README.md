@@ -41,8 +41,8 @@ Para acompanhar atualizações futuras nas tabelas mais volumosas (`customer` e 
 
 O funcionamento é:
 
-- Criamos uma tabela `cdc_control` que registra o último `last_update` processado para cada tabela.
-- A cada execução, comparamos o `last_update` dos registros da origem com a data registrada e, se forem mais recentes, os dados são inseridos em tabelas de extensão (`customer_ext` e `rental_ext`).
+- Criei uma tabela `cdc_control` que registra o último `last_update` processado para cada tabela.
+- A cada execução, comparei o `last_update` dos registros da origem com a data registrada e, se forem mais recentes, os dados são inseridos em tabelas de extensão (`customer_ext` e `rental_ext`).
 - Após o processamento, a data de controle é atualizada com o último `last_update`.
 
 As funções criadas estão detalhadas no arquivo `cdc_control.sql`.
